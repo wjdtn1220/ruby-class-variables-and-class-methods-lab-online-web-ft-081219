@@ -10,6 +10,7 @@ attr_accessor :name, :artist, :genre
     @@count += 1
     @@genre = genre
     @@artist = artist
+    @@genres << @genre
     @@artists << @artist
   end
   
@@ -17,9 +18,15 @@ attr_accessor :name, :artist, :genre
    @@count 
   end
   
+  def self.genres
+    @@genres.uniq
+  end
+  
   def self.artists
     @@artists.uniq
   end
+  
+  def self.genre_count
   
 end
 
