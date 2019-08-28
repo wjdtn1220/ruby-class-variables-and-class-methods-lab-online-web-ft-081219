@@ -47,10 +47,10 @@ attr_accessor :name, :artist, :genre
         artist_count[artist] += 1
       else
         artist_count[artist]
-        genre_count[genre] = 1
+        artist_count[artist] = 1
       end
     end
-    genre_count
+    artist_count
   end
 end
 
